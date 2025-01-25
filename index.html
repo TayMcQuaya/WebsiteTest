@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Team Murica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <meta property="og:image" content="images/TROMP.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TeamMurica">
+    <meta property="og:description" content="OWN A PIECE OF DEMOCRACY. ONE ORDINAL AT A TIME.">
+</head>
+
+<body>
+    <!-- <div class="ca-banner">
+      
+        <div class="ca-text">
+            <p>CA SOL: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            </p>
+        </div>
+       
+    </div> -->
+
+    <!-- Fixed Wallet Controls -->
+    <div id="fixed-wallet-overlay">
+        <button id="connect-wallet" class="header-btn" onclick="handleWalletClick()">Connect Wallet</button>
+    </div>
+
+    <div class="patriotic-ticker">
+        <div class="ticker-wrapper">
+            <div class="ticker-content">
+                <!-- First set -->
+                <span class="ticker-item">$TROMP IS THE TICKER</span>
+                <span class="ticker-item">2025 IS OUR YEAR</span>
+                <span class="ticker-item">MAKE AMERICA GREAT AGAIN</span>
+                <!-- Second set -->
+                <span class="ticker-item">$TROMP IS THE TICKER</span>
+                <span class="ticker-item">2025 IS OUR YEAR</span>
+                <span class="ticker-item">MAKE AMERICA GREAT AGAIN</span>
+                <!-- Third set -->
+                <span class="ticker-item">$TROMP IS THE TICKER</span>
+                <span class="ticker-item">2025 IS OUR YEAR</span>
+                <span class="ticker-item">MAKE AMERICA GREAT AGAIN</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <a href="https://trompdev.github.io/FloppyTromp2D/" class="header-btn-left" id="play-btn" style="display: none;">
+            <button class="header-btn">PLAY GAME</button>
+        </a>
+        <div class="title">
+            <img src="images/teamMurica_w.png" alt="TeamMurica Logo">
+            <div class="stripe"></div>
+            <div class="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+        </div>
+        <a href="https://pump.fun/coin/BJFgXSEVhqxqceUbppNJVRV6BkshTvjrwSkHCjKZpump" class="header-btn-right">
+            <button class="header-btn">BUY $TROMP</button>
+        </a>
+    </div>
+
+    <div class="hero">
+        <h1>↓ Scroll down for more Freedom ↓</h1>
+        <div class="slider-wrapper">
+            <div class="portfolio-slider" style="--quantity: 7">
+                <div class="item" style="--position: 1">
+                    <img src="images/VIVIK.png" alt="BigMike">
+                    <div class="character-name">Vivik</div>
+                </div>
+                <div class="item" style="--position: 2">
+                    <img src="images/PELOOSI.png" alt="Peloosi">
+                    <div class="character-name">Peloosi</div>
+                </div>
+                <div class="item" style="--position: 3">
+                    <img src="images/ELUN.png" alt="Hurris">
+                    <div class="character-name">Elun Mosk</div>
+                </div>
+                <div class="item" style="--position: 4">
+                    <img src="images/TROMP.png" alt="Tromp">
+                    <div class="character-name">Tromp</div>
+                </div>
+                <div class="item" style="--position: 5">
+                    <img src="images/BODEN.png" alt="Boden">
+                    <div class="character-name">Boden</div>
+                </div>
+                <div class="item" style="--position: 6">
+                    <img src="images/BABBY.png" alt="Babby">
+                    <div class="character-name">Babby</div>
+                </div>
+                <div class="item" style="--position: 7">
+                    <img src="images/VONCE.png" alt="Vonce">
+                    <div class="character-name">Vonce</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filler">
+        <p>Experience the power of democracy!</p>
+    </div>
+
+    <!-- Scroll-Driven Video Effect -->
+    <div class="video-timeline">
+        <div class="video-container">
+            <video src="video/tromptrailer.mp4" autoplay muted loop playsinline class="scrolling-video"></video>
+            <div class="video-mask">
+                <h1 class="spaced-title">Dodge Bullets</h1>
+            </div>
+        </div>
+        <section class="spacer"></section>
+    </div>
+
+    <!-- New content-grid-timeline wrapper -->
+    <div class="content-grid-timeline">
+        <!-- Content Container -->
+        <!-- <div class="content-container">
+            <div class="content-mask"></div>
+            <div class="content">
+                <div>
+                    <p>Ca SOL: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    </p>
+                    <a href="https://www.teammurica.xyz/"><button>BUY SOL</button></a>
+                </div>
+                <a href="https://trompdev.github.io/FloppyTromp2D/"><button class="play-game">PLAY GAME</button></a>
+
+                <div class="social-links-top">
+                    <div class="social-links">
+                        <a href="https://twitter.com/teammuricaxyz" target="_blank">
+                            <img src="images/X-white.png" alt="X (formerly Twitter)">
+                        </a>
+                        <a href="https://t.me/+RiVXDXpOGBMxOWJl" target="_blank">
+                            <img src="images/telegram-white.png" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="content-container">
+            <div class="content-mask"></div>
+            <div class="content">
+                <!-- Runes Ticker -->
+                <div class="patriotic-ticker">
+                    <div class="ticker-wrapper">
+                        <div class="ticker-content">
+                            <span class="ticker-item">NEW TICKER IS HERE</span>
+                            <span class="ticker-item">$TROMP</span>
+                            <span class="ticker-item">GET READY FOR DEMOCRACY</span>
+                            <!-- Duplicate for seamless loop -->
+                            <span class="ticker-item">NEW TICKER IS HERE</span>
+                            <span class="ticker-item">$TROMP</span>
+                            <span class="ticker-item">GET READY FOR DEMOCRACY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="play-game" onclick="handleMainPlayClick()">CONNECT WALLET</button>
+                </div>
+                <div class="button-container">
+                    <a href="https://pump.fun/coin/BJFgXSEVhqxqceUbppNJVRV6BkshTvjrwSkHCjKZpump">
+                    <button class="play-game buy-tromp">BUY $TROMP</button>
+                    </a>
+                </div>
+                
+                <div class="social-links-top">
+                    <div class="social-links">
+                        <a href="https://twitter.com/teammuricaxyz" target="_blank">
+                            <img src="images/X-white.png" alt="X (formerly Twitter)">
+                        </a>
+                        <a href="https://t.me/+RiVXDXpOGBMxOWJl" target="_blank">
+                            <img src="images/telegram-white.png" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Grid Container -->
+        <!-- <div class="grid-container">
+            <div class="grid-mask"></div>
+            <div class="grid">
+                <img src="images/image_grid.png" alt="Grid Image">
+            </div>
+        </div>
+    </div> -->
+
+
+    <svg class="svg-filter">
+        <defs>
+          <filter id="knockout-filter" colorInterpolationFilters="sRGB">
+            <feColorMatrix
+              result="knocked"
+              type="matrix"
+              values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      -1 -1 -1 1 0"
+            />
+            <feComponentTransfer>
+              <feFuncR type="linear" slope="3" intercept="-1" />
+              <feFuncG type="linear" slope="3" intercept="-1" />
+              <feFuncB type="linear" slope="3" intercept="-1" />
+            </feComponentTransfer>
+            <feComponentTransfer>
+              <feFuncR type="table" tableValues="0 0 0 0 0 1 1 1 1 1" />
+              <feFuncG type="table" tableValues="0 0 0 0 0 1 1 1 1 1" />
+              <feFuncB type="table" tableValues="0 0 0 0 0 1 1 1 1 1" />
+            </feComponentTransfer>
+          </filter>
+        </defs>
+    </svg>
+
+    <div class="footer-text">
+        STAND TALL FOR DEMOCRACY. No team, no roadmap, no community. Just a pure commitment to 'Murica!
+    </div>
+
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://twitter.com/teammuricaxyz" target="_blank">
+                <img src="images/X.png" alt="X (formerly Twitter)">
+            </a>
+            <a href="https://t.me/+RiVXDXpOGBMxOWJl" target="_blank">
+                <img src="images/telegram.png" alt="Telegram">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.skypack.dev/tweakpane"></script>
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+    <script src="js/wallet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
