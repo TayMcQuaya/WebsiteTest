@@ -121,7 +121,7 @@ body {
 
 /* Fixed Wallet Overlay */
 #fixed-wallet-overlay {
-    position: fixed;
+    position: absolute;
     top: 55px;
     left: 0;
     width: 100vw;
