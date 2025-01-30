@@ -1384,3 +1384,26 @@ html {
     z-index: 10;
 }
 
+/* Desktop Experience Message - Only visible on mobile */
+.desktop-experience-msg {
+    display: none;
+    background-color: rgba(184, 32, 37, 0.9);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Bungee', cursive, Arial, sans-serif;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .desktop-experience-msg {
+        display: block;
+    }
+}
+
