@@ -693,11 +693,12 @@ button.play-game {
     font-size: 50px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 50px;
-    margin-bottom: 50px;  
+    margin-top: 20px;
+    margin-bottom: 20px;  
     transition: all 0.3s ease;
     border-radius: 12px;
     width: 500px;
+    font-family: 'Bungee', cursive, Arial, sans-serif;
 }
 
 button.play-game:hover {
@@ -706,15 +707,22 @@ button.play-game:hover {
     box-shadow: 0 8px 20px rgba(184, 32, 37, 0.4);
 }
 
-/* Ensure mobile styles maintain the hover effects */
+/* Mobile adjustments */
 @media (max-width: 768px) {
     button.play-game {
         font-size: 30px;
         width: 300px;
+        padding: 15px 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .button-container {
+        margin: 15px 0;
     }
     
     /* Keep hover effects but reduce their intensity for mobile */
-    button:hover, button.play-game:hover {
+    button.play-game:hover {
         transform: translateY(-3px) scale(1.01);
         box-shadow: 0 4px 12px rgba(184, 32, 37, 0.3);
     }
@@ -723,6 +731,13 @@ button.play-game:hover {
 .button-container {
     position: relative;
     margin: 20px 0;
+    text-align: center;
+}
+
+.button-container a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
 }
 
 .button-container.soon::before {
