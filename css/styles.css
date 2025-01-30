@@ -121,19 +121,24 @@ body {
 
 /* Fixed Wallet Overlay */
 #fixed-wallet-overlay {
-    position: absolute;
-    top: 15%;
-    left: 80px;
-    transform: translateY(-50%);
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 100vw;
+    height: var(--header-height, 100px);
     display: flex;
-    gap: 15px;
+    align-items: center;
     z-index: 1000;
 }
 
 #fixed-wallet-overlay .header-btn {
-    font-size: 1em;
-    padding: 15px 30px;
-    min-width: 200px;
+    position: absolute;
+    left: clamp(40px, calc(50 * 100vw / 1920), 300px);
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    padding: 18px 30px;
+    min-width: 180px;
     white-space: nowrap;
     display: flex;
     justify-content: center;
@@ -255,13 +260,14 @@ body {
 /* Mobile adjustments */
 @media (max-width: 768px) {
     #fixed-wallet-overlay {
-        left: 40px;
+        height: 60px;
     }
 
     #fixed-wallet-overlay .header-btn {
-        font-size: 0.6em;
-        padding: 10px 15px;
-        min-width: 160px;
+        left: 40px;
+        font-size: 0.5em;
+        padding: 8px 12px;
+        min-width: 140px;
     }
 
     .header {
