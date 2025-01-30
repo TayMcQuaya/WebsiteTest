@@ -258,55 +258,80 @@ body {
 }
 
 /* Mobile adjustments */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #fixed-wallet-overlay {
-        height: 60px;
+        height: 80px !important;
+        top: 200px !important;
     }
 
     #fixed-wallet-overlay .header-btn {
-        left: 40px;
-        font-size: 0.5em;
-        padding: 8px 12px;
-        min-width: 140px;
+        left: 20px !important;
+        font-size: 0.65em !important;
+        padding: 10px 15px !important;
+        min-width: 120px !important;
+        height: 40px !important;
     }
 
     .header {
-        height: 60px;
-        padding: 0 5px;
+        height: 80px !important;
+        padding: 0 10px !important;
+        font-size: 1.5em !important;
     }
 
     .header .title img {
-        max-height: 45px;
+        max-height: 32px !important;
     }
 
-    .header .stripe {
-        height: 15px;
+    .header .stars {
+        margin-left: 6px !important;
+        margin-top: 6px !important;
     }
 
     .header .stars .star {
-        width: 16px;
-        height: 16px;
+        width: 10px !important;
+        height: 10px !important;
+        margin: 0 1px !important;
     }
 
     .header-btn {
-        font-size: 0.5em;
-        padding: 8px 12px;
-        min-width: 140px; /* Adjusted for mobile */
+        font-size: 0.65em !important;
+        padding: 10px 15px !important;
+        min-width: 120px !important;
+        height: 40px !important;
     }
 
     .header-btn-left {
-        left: 40px;
+        left: 20px !important;
+        top: 245% !important;
     }
     
     .header-btn-right {
-        right: 40px;
+        right: 20px !important;
+        top: 245% !important;
     }
 }
 
-@media (max-width: 480px) {
+/* Even smaller screens */
+@media screen and (max-width: 480px) {
+    .header .title img {
+        max-height: 28px !important;
+    }
+
+    .header .stars {
+        margin-left: 4px !important;
+        margin-top: 4px !important;
+    }
+
     .header .stars .star {
-        width: 14px;
-        height: 14px;
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 0.5px !important;
+    }
+
+    .header-btn, #fixed-wallet-overlay .header-btn {
+        min-width: 110px !important;
+        font-size: 0.6em !important;
+        padding: 8px 12px !important;
     }
 }
 
@@ -923,12 +948,17 @@ html {
     
     
     .header .title img {
-        max-height: 35px; /* Smaller logo on mobile */
+        max-height: 32px;  /* Reduced from 40px */
+    }
+
+    .header .stars {
+        margin-left: 6px;  /* Reduced margin */
+        margin-top: 6px;
     }
 
     .header .stars .star {
-        width: 15px;
-        height: 15px;
+        width: 10px;      /* Reduced from 14px */
+        height: 10px;
         margin: 0 1px;
     }
 
@@ -1353,3 +1383,4 @@ html {
     transform: translateY(-50%);
     z-index: 10;
 }
+
