@@ -306,8 +306,8 @@ body {
     }
     
     .header-btn-right {
-        right: 20px !important;
-        top: 245% !important;
+        right: 150px !important;
+        top: 50% !important;
     }
 }
 
