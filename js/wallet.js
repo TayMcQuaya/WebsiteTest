@@ -58,7 +58,9 @@ window.handleWalletClick = async () => {
 
 // Handle main play button click
 window.handleMainPlayClick = async () => {
-    if (!walletAddress) {
+    if (walletAddress) {
+        window.location.href = `https://taymcquaya.github.io/GameTest/?wallet=${encodeURIComponent(walletAddress)}`;
+    } else {
         await connectWallet();
     }
 };

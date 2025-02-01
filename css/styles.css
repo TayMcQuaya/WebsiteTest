@@ -217,7 +217,7 @@ body {
 /* Header Buttons */
 .header-btn-left {
     position: absolute;
-    left: 300px;
+    left: 250px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
@@ -225,7 +225,7 @@ body {
 
 .header-btn-right {
     position: absolute;
-    right: 80px;
+    right: 400px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
