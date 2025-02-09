@@ -59,7 +59,7 @@ window.handleWalletClick = async () => {
 // Handle main play button click
 window.handleMainPlayClick = async () => {
     if (walletAddress) {
-        window.location.href = `https://taymcquaya.github.io/GameTest/?wallet=${encodeURIComponent(walletAddress)}`;
+        window.location.href = `https://trompdev.github.io/FloppyTromp2D/?wallet=${encodeURIComponent(walletAddress)}`;
     } else {
         await connectWallet();
     }
@@ -85,14 +85,14 @@ function updateUI(isConnected) {
         // Update header play button
         if (playBtn) {
             playBtn.style.display = 'block';
-            playBtn.href = `https://taymcquaya.github.io/GameTest/?wallet=${encodeURIComponent(walletAddress)}`;
+            playBtn.href = `https://trompdev.github.io/FloppyTromp2D/?wallet=${encodeURIComponent(walletAddress)}`;
         }
         
         // Update main connect/play button
         if (mainPlayBtn) {
             mainPlayBtn.textContent = 'PLAY GAME';
             mainPlayBtn.onclick = () => {
-                window.location.href = `https://taymcquaya.github.io/GameTest/?wallet=${encodeURIComponent(walletAddress)}`;
+                window.location.href = `https://trompdev.github.io/FloppyTromp2D/?wallet=${encodeURIComponent(walletAddress)}`;
             };
         }
     } else {
